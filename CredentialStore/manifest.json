@@ -1,0 +1,21 @@
+{
+  "name": "Credential Store",
+  "version": "1.0",
+  "description": "This extension let user to store the frequently used credentials locally and later help them in login across different websites.",
+  "permissions": ["storage","tabs","notifications",
+        "http://*/",
+        "https://*/"],
+  "background": {
+   "scripts": ["background.js"]
+},
+  "browser_action": {
+    "default_popup": "extension.html",
+    "default_icon": {
+      "16": "images/SS_icon.ico",
+      "32": "images/SS_icon.ico",
+      "48": "images/SS_icon.ico",
+      "128": "images/SS_icon.ico"
+    }
+  },
+  "manifest_version": 2
+}
